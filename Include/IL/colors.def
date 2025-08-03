@@ -1,0 +1,5 @@
+//Defined color for sec file which can't be done in PVD->COLORS
+ONLINE ACC FILL;%025:080:110;
+ONLINE APP FILL;%024:078:107;
+ONLINE TWR FILL;%023:076:104;
+ONLINE ATC LINE;%030:090:200;

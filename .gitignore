@@ -1,0 +1,7 @@
+!Include/
+Include/*
+!Include/IL/
+*.isc
+!LLLL.isc
+*.ini
+*.txt
