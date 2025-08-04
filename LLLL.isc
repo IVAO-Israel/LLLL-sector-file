@@ -86,3 +86,9 @@ F;LLIB_ATC.fcl
 F;LLBG_ATC.fcl
 F;LLER_ATC.fcl
 F;LLLL_ATC.fcl
+
+[VFRENR]
+F;LLLL.vfi
+
+[VFRRTEENR]
+F;LLLL.vrt
