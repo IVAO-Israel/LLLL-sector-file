@@ -4,3 +4,4 @@ Include/*
 *.isc
 !LLLL.isc
 *.ini
+*.txt
