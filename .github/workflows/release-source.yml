@@ -1,6 +1,9 @@
 
 name: ZIP Sector
-on: workflow_dispatch
+#on: workflow_dispatch
+on:
+  release:
+    types: [published]
 
 
 jobs:
@@ -26,3 +29,9 @@ jobs:
           name: LLLL
           path: LLLL/LLLL.zip
           compression-level: 0
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        # if: github.ref_type == 'tag'
+        with:
+          files: LLLL/LLLL.zip
