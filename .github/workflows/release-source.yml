@@ -15,10 +15,8 @@ jobs:
           fetch-depth: 0
       - name: Create source code structure
         run: |
-          ls -la
           mkdir LLLL
           cp -r ISRAEL.clr LLLL.isc Include LLLL/
-          echo "ls -la"
-          ls -la
-          echo "ls -la LLLL"
-          ls -la LLLL
+          cd LLLL
+          zip -r LLLL.zip .
+          zipinfo LLLL.zip
