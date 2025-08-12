@@ -16,3 +16,5 @@ jobs:
       - name: Create source code structure
         run: |
           ls -la
+          mkdir LLLL
+          cp -r ISRAEL.clr LLLL.isc Include LLLL/
