@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Create source code structure
+      - name: ZIP files
         run: |
           mkdir LLLL
           cp -r ISRAEL.clr LLLL.isc Include LLLL/
@@ -25,3 +25,4 @@ jobs:
         with:
           name: LLLL
           path: LLLL/LLLL.zip
+          compression-level: 0
