@@ -2,7 +2,7 @@
 name: ZIP Sector
 on: 
   push:
-    branches: '**' #'main'
+    branches: 'main'
   release:
     types: [published]
 
@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -31,7 +32,6 @@ jobs:
             ISRAEL.clr
             LLLL.isc
             Include/
-
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
