@@ -34,11 +34,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: LLLL
-          path: LLLL/LLLL.zip
-          compression-level: 0
+          path: LLLL
 
       - name: Release
         uses: softprops/action-gh-release@v2
-        # if: github.ref_type == 'tag'
+        if: github.event_name != 'push'
         with:
           files: LLLL/LLLL.zip
