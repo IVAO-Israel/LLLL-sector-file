@@ -2,7 +2,7 @@
 name: ZIP Sector
 on: 
   push:
-    branches: 'main'
+    branches: '**' #'main'
   release:
     types: [published]
 
