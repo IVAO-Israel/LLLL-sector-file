@@ -1,0 +1,47 @@
+
+name: ZIP Sector
+on: 
+  push:
+    branches: 'main'
+  release:
+    types: [published]
+
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: ZIP Sector files
+        run: |
+          mkdir LLLL
+          cp -r ISRAEL.clr LLLL.isc Include LLLL/
+          cd LLLL
+          zip -r LLLL.zip .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LLLL
+          path: |
+            ISRAEL.clr
+            LLLL.isc
+            Include/
+
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        if: github.event_name != 'push'
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: LLLL/LLLL.zip
+          asset_name: LLLL.zip
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: github.event_name != 'push'
+        with:
+          files: LLLL/LLLL.zip
