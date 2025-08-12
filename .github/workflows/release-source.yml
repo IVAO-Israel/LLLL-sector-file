@@ -18,3 +18,7 @@ jobs:
           ls -la
           mkdir LLLL
           cp -r ISRAEL.clr LLLL.isc Include LLLL/
+          echo "ls -la"
+          ls -la
+          echo "ls -la LLLL"
+          ls -la LLLL
