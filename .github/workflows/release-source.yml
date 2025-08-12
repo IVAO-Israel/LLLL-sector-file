@@ -1,9 +1,13 @@
 
 name: ZIP Sector
 #on: workflow_dispatch
-on:
-  release:
-    types: [published]
+# on:
+#   release:
+#     types: [published]
+on: 
+  push:
+    # only trigger on branches, not on tags
+    branches: 'gh-actions'
 
 
 jobs:
