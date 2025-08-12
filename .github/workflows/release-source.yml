@@ -22,14 +22,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: ZIP files
+      - name: ZIP Sector files
         run: |
-          echo "${{ github.event_name }}"
           mkdir LLLL
           cp -r ISRAEL.clr LLLL.isc Include LLLL/
           cd LLLL
           zip -r LLLL.zip .
-          zipinfo LLLL.zip
 
       - uses: actions/upload-artifact@v4
         with:
