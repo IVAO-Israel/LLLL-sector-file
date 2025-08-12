@@ -1,3 +1,18 @@
 
 name: ZIP Sector
 on: workflow_dispatch
+
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Create source code structure
+        run: |
+          ls -la
