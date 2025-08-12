@@ -8,6 +8,8 @@ on:
   push:
     # only trigger on branches, not on tags
     branches: 'gh-actions'
+  release:
+    types: [published]
 
 
 jobs:
