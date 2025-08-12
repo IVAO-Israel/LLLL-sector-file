@@ -27,7 +27,11 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: LLLL
-          path: LLLL
+          path: |
+            ISRAEL.clr
+            LLLL.isc
+            Include/
+
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
