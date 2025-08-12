@@ -24,6 +24,7 @@ jobs:
           fetch-depth: 0
       - name: ZIP files
         run: |
+          echo ${{ github.event.action }} 
           mkdir LLLL
           cp -r ISRAEL.clr LLLL.isc Include LLLL/
           cd LLLL
