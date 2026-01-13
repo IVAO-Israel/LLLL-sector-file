@@ -5,3 +5,4 @@ Include/*
 !LLLL.isc
 *.ini
 *.txt
+.vs*
