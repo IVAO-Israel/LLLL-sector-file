@@ -9,6 +9,7 @@ Date: 13/01/2026
 --
 - Change release point from label to taxi center
 - Update LLNV runways. 26L/08R -> 25/07, 26C/08C -> 26L/08R
+- Update LLBG_ATIS frequency
 
 //======================================
 Date : 02/08/2025
