@@ -6,7 +6,7 @@ TransAlt=18000
 TMA=1
 IncTransLevel=1
 IncTransAlt=1
-AtisFreq=132.500
+AtisFreq=132.800
 
 [PREFS]
 ICAOCtr=LLBG:0:0:1:1:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLBS:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLEK:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLER:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLES:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLHA:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLHB:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLHS:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLHZ:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLIB:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLMG:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLNV:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLOV:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;LLRD:0:0:0:0:clNone:clNone:clNone:clNone:clNone:clNone:clNone:clNone;
